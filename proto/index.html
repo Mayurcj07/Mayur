@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayur CJ Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        // Initialize EmailJS with your public key
+        (function() {
+            emailjs.init("nUCheZmVgdMdmG-Sd"); // Replace with your actual EmailJS Public Key
+        })();
+    </script>
+</head>
+<body>
+    <!-- Portfolio Header -->
+    <header>
+        <h1>Mayur CJ</h1>
+        <p>Computer Science Engineer at Mysuru Royal Institute of Technology</p>
+        <img src="images/hahfajs.jpg" alt="Profile Image" id="profile-img">
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I’m Mayur CJ, a Computer Science Engineering student. I'm passionate about web development, game development, and software engineering.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>Pac-Man Game (Python and OpenGL)</li>
+            <li>AERO Game (Pygame)</li>
+            <li>Student-Teacher Appointment Website</li>
+        </ul>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>Python, OpenGL, Pygame</li>
+            <li>React.js, Firebase</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- JavaScript to handle EmailJS integration -->
+    <script src="app.js"></script>
+</body>
+</html>
